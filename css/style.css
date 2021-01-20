@@ -61,18 +61,30 @@ body {
   color: var(--title-text-color);
 
   text-align: center;
+
+  margin-bottom: 50px;
 }
 .container {
   width: 1200px;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
-
-  /* border: 1px solid red; */
 }
 .section {
   padding: 94px 0;
 }
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 /* =======END COMPONENTS======= */
 
 /* =======LOGO======= */
@@ -136,10 +148,17 @@ body {
 
 /* =======HERO======= */
 .hero {
+  padding: 200px 0;
   background: var(--bgc-hero-color);
   text-align: center;
 }
 .hero-title {
+  margin-bottom: 30px;
+
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -157,6 +176,14 @@ body {
   background-color: var(--accent-text-color);
   letter-spacing: 0.06em;
 
+  width: 200px;
+  height: 50px;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
   font-family: Roboto, sans-serif;
 }
 /* =======END HERO======= */
@@ -168,16 +195,53 @@ body {
   font-size: 14px;
   line-height: 1.14;
 
+  margin-bottom: 10px;
+
   text-transform: uppercase;
+}
+.description-list {
+  display: flex;
+  align-items: center;
+}
+.description-item:not(:last-child) {
+  margin-right: 30px;
+}
+.description-text {
+  width: 270px;
 }
 /* =======END DESCRIPTION======= */
 
 /* =======WHAT WE DO======= */
-
+.about-list {
+  display: flex;
+  align-items: center;
+}
+.about-item:not(:last-child) {
+  margin-right: 30px;
+}
 /* =======END WHAT WE DO======= */
 
 /* =======TEAM======= */
+.team {
+  background-color: var(--bgc-team-color);
+}
+.team-list {
+  display: flex;
+  align-items: center;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  background: #ffffff;
+}
 .team-subtitle {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -186,21 +250,37 @@ body {
   text-align: center;
 }
 .team-text {
+  padding-bottom: 30px;
+
   font-size: 16px;
   line-height: 1.19;
 
   text-align: center;
+}
+.team-img {
+  margin-bottom: 30px;
 }
 /* =======END TEAM======= */
 
 /* =======FOOTER======= */
 .footer {
   background-color: var(--bgc-hero-color);
+
+  padding: 60px 0;
+}
+.logo.withe {
+  display: block;
+  padding: 0;
+  margin-bottom: 20px;
 }
 .footer-link,
 .footer-address {
   font-style: normal;
   color: var(--footer-text-color);
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+  margin-top: 9px;
 }
 .footer-link:hover,
 .footer-link:focus {
