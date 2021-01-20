@@ -52,12 +52,6 @@ body {
 .accent {
   color: var(--accent-text-color);
 }
-.contact {
-  color: var(--primary-text-color);
-}
-.current {
-  color: var(--accent-text-color);
-}
 .about-title,
 .team-title,
 .description-title {
@@ -67,6 +61,17 @@ body {
   color: var(--title-text-color);
 
   text-align: center;
+}
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* border: 1px solid red; */
+}
+.section {
+  padding: 94px 0;
 }
 /* =======END COMPONENTS======= */
 
@@ -78,25 +83,61 @@ body {
   line-height: 1.19;
 
   color: var(--black-text-color);
+
+  margin-right: 93px;
+  padding-top: 21px;
+  padding-bottom: 28px;
 }
 /* =======END LOGO======= */
 
 /* =======HEADER======= */
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+}
+.site-nav {
+  display: flex;
+}
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
 .nav-link {
+  display: block;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+
+  padding-top: 29px;
+  padding-bottom: 35px;
+}
+.nav-link.contact {
+  color: var(--primary-text-color);
+}
+.nav-link.current {
+  color: var(--accent-text-color);
 }
 .nav-link:hover,
 .nav-link:focus {
   color: Var(--accent-text-color);
+}
+.site-contacts {
+  display: flex;
+  margin-left: auto;
+}
+.nav-contacns:not(:last-child) {
+  margin-right: 50px;
 }
 /* =======END HEADER======= */
 
 /* =======HERO======= */
 .hero {
   background: var(--bgc-hero-color);
+  text-align: center;
 }
 .hero-title {
   font-weight: 900;
@@ -105,7 +146,6 @@ body {
   color: var(--white-text-color);
   letter-spacing: 0.06em;
 
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
