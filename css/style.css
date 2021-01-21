@@ -127,8 +127,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 
-  padding-top: 29px;
-  padding-bottom: 35px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .nav-link.contact {
   color: var(--primary-text-color);
