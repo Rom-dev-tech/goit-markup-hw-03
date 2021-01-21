@@ -302,9 +302,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 34px;
 }
 .portfolio-btn {
-  margin-bottom: 34px;
   padding: 6px 22px;
 
   border: none;
