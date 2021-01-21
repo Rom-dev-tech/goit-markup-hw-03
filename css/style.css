@@ -223,6 +223,9 @@ body {
 .about-item:not(:last-child) {
   margin-right: 30px;
 }
+.team-cards-description {
+  padding: 30px 58px;
+}
 /* =======END WHAT WE DO======= */
 
 /* =======TEAM======= */
@@ -254,15 +257,10 @@ body {
   text-align: center;
 }
 .team-text {
-  padding-bottom: 30px;
-
   font-size: 16px;
   line-height: 1.19;
 
   text-align: center;
-}
-.team-img {
-  margin-bottom: 30px;
 }
 /* =======END TEAM======= */
 
@@ -353,7 +351,6 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
 
-  /* outline: 1px solid #eeeeee; */
   background: #ffffff;
 }
 .cards-item:nth-child(3n) {
