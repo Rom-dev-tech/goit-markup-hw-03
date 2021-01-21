@@ -279,9 +279,11 @@ body {
   font-style: normal;
   color: var(--footer-text-color);
 }
-.footer-item:not(:last-child) {
+.footer-address {
   margin-bottom: 9px;
-  margin-top: 9px;
+}
+.footer-item {
+  margin-bottom: 9px;
 }
 .footer-link:hover,
 .footer-link:focus {
