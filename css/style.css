@@ -283,7 +283,7 @@ body {
 .footer-address {
   margin-bottom: 9px;
 }
-.footer-item {
+.footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
 .footer-link:hover,
