@@ -223,9 +223,6 @@ body {
 .about-item:not(:last-child) {
   margin-right: 30px;
 }
-.team-cards-description {
-  padding: 30px 58px;
-}
 /* =======END WHAT WE DO======= */
 
 /* =======TEAM======= */
@@ -261,6 +258,9 @@ body {
   line-height: 1.19;
 
   text-align: center;
+}
+.team-cards-description {
+  padding: 30px 30px;
 }
 /* =======END TEAM======= */
 
