@@ -100,8 +100,7 @@ body {
   color: var(--black-text-color);
 
   margin-right: 93px;
-  padding-top: 21px;
-  padding-bottom: 28px;
+  padding: 28px 0px;
 }
 /* =======END LOGO======= */
 
@@ -112,9 +111,11 @@ body {
 }
 .header-nav {
   display: flex;
+  align-items: center;
 }
 .site-nav {
   display: flex;
+  padding: 35px 0;
 }
 .nav-item:not(:last-child) {
   margin-right: 50px;
@@ -126,9 +127,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
-
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .nav-link.contact {
   color: var(--primary-text-color);
@@ -143,6 +141,7 @@ body {
 .site-contacts {
   display: flex;
   margin-left: auto;
+  padding: 35px 0;
 }
 .nav-contacns:not(:last-child) {
   margin-right: 50px;
